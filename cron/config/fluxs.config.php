@@ -40,5 +40,16 @@ array(
     'url' => 'https://developers.google.com/web/updates/rss.xml',
     'name' => 'Google dev',
     'logo' => 'https://pbs.twimg.com/profile_images/1320180647/chromiumchrome_400x400.png'
+  ),
+  array(
+    'url' => 'https://css-tricks.com/feed/',
+    'name' => 'CSS Tricks',
+    'logo' => 'https://pbs.twimg.com/profile_images/546011298627334146/MAeF2-yK_200x200.jpeg'
+  ),
+  array(
+    'url' => 'https://hacks.mozilla.org/feed/',
+    'name' => 'Hacks Mozilla',
+    'logo' => 'https://pbs.twimg.com/profile_images/2631319542/aa071efb0ed133973c2ab9fea8b5f6d8_400x400.png'
   )
+  
 );
