@@ -50,6 +50,15 @@ array(
     'url' => 'https://hacks.mozilla.org/feed/',
     'name' => 'Hacks Mozilla',
     'logo' => 'https://pbs.twimg.com/profile_images/2631319542/aa071efb0ed133973c2ab9fea8b5f6d8_400x400.png'
+  ),
+  array(
+    'url' => 'http://ilovetypography.com/feed/',
+    'name' => 'I Love Typography',
+    'logo' => 'http://wwwhere.io/img/thumbs/iliketypography.jpg'
+  ),
+  array(
+    'url' => 'http://www.quirksmode.org/blog/index.xml',
+    'name' => 'QuirksMode',
+    'logo' => 'http://wwwhere.io/img/thumbs/quirksmode.jpg'
   )
-  
 );

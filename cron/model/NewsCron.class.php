@@ -21,7 +21,7 @@ class NewsCron
           $posts = $feeds[$i]->posts;
 
           for($p = 0;$p < count($posts); $p++) {
-              if(!in_array('Editos',$posts[$p]->categories) && $posts[$p]->ts > strtotime("-15 days"))
+              if(!in_array('Editos',$posts[$p]->categories) && $posts[$p]->ts > strtotime("-10 days"))
               {
                 //if (limit.utc() < moment(item.date).utc() && !item.categories.some(cat => cat === 'Editos')) {
                 $news[] = array(
