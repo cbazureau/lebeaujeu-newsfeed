@@ -27,6 +27,7 @@ class NewsCron
                 $news[] = array(
                     'flux' => $fluxs[$i],
                     'link' => $posts[$p]->link,
+                    'slack' => $posts[$p]->slack ? 'false' : 'true',
                     'timestamp' => $posts[$p]->ts,
                     'date' => date("d/m/y H:i", $posts[$p]->ts),
                     'title' => $posts[$p]->title,

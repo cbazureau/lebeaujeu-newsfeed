@@ -12,6 +12,16 @@ class NewsFeed
         return $out;
     }
 
+    function containsKeyword($string) {
+        $keywords = ['web','css','javascript','react','angular','html5','android','ios',' ux'];
+        foreach ( $keywords as $keyword ) {
+            if ( stripos( $string, $keyword ) !== FALSE ) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     function __construct($url)
     {   
         $data = $this->getData($url);
@@ -31,6 +41,11 @@ class NewsFeed
             $post->link  = (string) $item->link;
             $post->title = (string) $item->title;
             $post->text  = (string) $item->description;
+            if(NewsFeed::containsKeyword($post->title) || NewsFeed::containsKeyword($post->text)) {
+               $post->slack = true;
+            } else {
+               $post->slack = false;
+            }
             $cat = NewsFeed::xml2array($item->category);
             $post->categories = [];
             if(count($cat) && is_string($cat[0])) {
